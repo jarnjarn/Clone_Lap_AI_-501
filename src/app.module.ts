@@ -3,7 +3,7 @@ import { ConfigModule } from '@nestjs/config';
 import { MongooseModule } from '@nestjs/mongoose';
 import { DevicesModule } from './devices/devices.module';
 import { CategoriesModule } from './categories/categories.module';
-
+import { StaffModule } from './staff/staff.module';
 @Module({
   imports: [
     ConfigModule.forRoot(),
@@ -18,6 +18,7 @@ import { CategoriesModule } from './categories/categories.module';
     ),
     DevicesModule,
     CategoriesModule,
+    StaffModule
   ],
   controllers: [],
   providers: [],
